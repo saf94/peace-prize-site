@@ -1,3 +1,192 @@
+@import 'theme';
+
 .home-template {
-    color: #DEBF57
+  font-family: Poppins;
+
+  h1 {
+    color: $primary-gold;
+  }
+
+  .section-1,
+  .section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 80px;
+    margin-bottom: 80px;
+  }
+
+  .section-1 {
+    .content-wrapper {
+      padding: 0 50px;
+      margin: 0 auto;
+      width: 50%;
+    }
+
+    .img-wrapper {
+      width: 400px;
+    }
+
+    img {
+      border-radius: 15%;
+      width: 100%;
+    }
+
+    .bg-circle {
+      position: absolute;
+      z-index: -1;
+      width: 500px;
+    }
+  }
+
+  .section-2 {
+    .content-wrapper {
+      padding: 0 50px;
+      margin: 0 auto;
+      width: 50%;
+    }
+
+    .img-wrapper {
+      width: 400px;
+    }
+
+    img {
+      border-radius: 15%;
+      width: 100%;
+    }
+
+    .bg-circle {
+      position: absolute;
+      z-index: -1;
+      width: 500px;
+    }
+  }
+
+  .previous-winners {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 100px 0;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 40px;
+
+      li {
+        display: inline-block;
+        padding: 0 5px;
+        color: #4b4949;
+      }
+
+      li.active {
+        color: #debf57;
+        font-weight: 600;
+      }
+    }
+
+    .winners {
+      justify-content: space-evenly;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .winner-wrapper {
+      text-align: left;
+      backdrop-filter: blur(6px);
+      // max-width: 70%;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: rgba(255, 255, 255, 0);
+      padding: 40px;
+      border-radius: 25px;
+
+      img {
+        object-fit: contain;
+        border-radius: 25px;
+      }
+
+      .winner-year {
+        display: flex;
+      }
+
+      .winner-details {
+        padding: 0 40px;
+        flex: 1;
+        display: none;
+        opacity: 0;
+
+        h2 {
+          font-size: 48px;
+          margin: 0;
+        }
+
+        h4 {
+          font-size: 18px;
+          font-style: italic;
+          margin: 0;
+          margin-bottom: 30px;
+        }
+
+        h3 {
+          position: absolute;
+          transform: rotate(90deg);
+          bottom: 0;
+          right: 0;
+          font-size: 200px;
+          width: 260px;
+          word-break: break-word;
+          margin: 0;
+          line-height: 200px;
+          color: black;
+          z-index: -1;
+        }
+
+        p {
+          position: relative;
+        }
+
+        button {
+          background: $primary-gold;
+          border-radius: 25px;
+          padding: 10px;
+          width: 150px;
+          color: inherit;
+          border: none;
+          cursor: pointer;
+          outline: inherit;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .nominate-section {
+    display: flex;
+    background-color: $primary-gold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: white;
+      margin-right: 50px;
+    }
+
+    button {
+      background: #000;
+      border-radius: 25px;
+      padding: 10px;
+      width: 150px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      outline: inherit;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
 }
