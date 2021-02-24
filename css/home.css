@@ -80,6 +80,7 @@
 	display: inline-block;
 	padding: 0 5px;
 	color: #4b4949;
+	cursor: pointer;
 }
 
 .home-template .previous-winners ul li.active {
@@ -96,29 +97,32 @@
 .home-template .previous-winners .winner-wrapper {
 	text-align: left;
 	backdrop-filter: blur(6px);
+	max-width: 70%;
 	justify-content: space-evenly;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	background-color: rgba(255, 255, 255, 0);
-	padding: 40px;
+	background-color: rgba(255, 255, 255, 0.15);
+	padding: 40px 0;
 	border-radius: 25px;
 }
 
 .home-template .previous-winners .winner-wrapper img {
-	object-fit: contain;
 	border-radius: 25px;
+	max-width: 350px;
 }
 
 .home-template .previous-winners .winner-wrapper .winner-year {
 	display: flex;
+	position: absolute;
+	left: 40px;
+	width: 90%;
+	opacity: 0;
 }
 
 .home-template .previous-winners .winner-wrapper .winner-details {
-	padding: 0 40px;
+	padding: 0 0 0 40px;
 	flex: 1;
-	display: none;
-	opacity: 0;
 }
 
 .home-template .previous-winners .winner-wrapper .winner-details h2 {
