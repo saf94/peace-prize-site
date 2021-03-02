@@ -152,8 +152,15 @@ function peace_prize_scripts() {
 	wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js', array(), false, true );
 	wp_enqueue_script( 'gsap-js-scrolltrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js', array(), false, true );
 
+	// deregister default jQuery included with Wordpress
+	wp_deregister_script( 'jquery' );
+
+	$jquery_cdn = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+	wp_enqueue_script( 'jquery', $jquery_cdn, array(), '3.4.1', true );
+
 	//ADD CUSTOM JS FILES HERE
 	wp_enqueue_script( 'home-page', get_template_directory_uri() . '/js/home-page.js', array(), false, true );
+	wp_enqueue_script( 'home-banner-resize', get_template_directory_uri() . '/js/home-banner-resize.js', array(), false, true );
 
 	//ADD CUSTOM CSS/SCSS FILES HERE
 	wp_enqueue_style( 'home', get_template_directory_uri() .'/css/home.css', array(), false );

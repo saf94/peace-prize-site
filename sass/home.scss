@@ -7,42 +7,69 @@
     color: $primary-gold;
   }
 
+  .fullsize-video-bg {
+    position: relative;
+    max-height: 600px;
+
+    .black-bg {
+      z-index: -2;
+      background-color: #000;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+
+    .banner-content {
+      display: flex;
+
+      h1 {
+        position: absolute;
+        width: 50%;
+        left: 40px;
+        align-self: center;
+        justify-self: center;
+        font-size: 60px;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 40px;
+        }
+        
+        @media screen and (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+    }
+  
+    #videoBG {
+      z-index: -1;
+      transform: translate(25%, 0px);
+    }
+  }
+
   .section-1,
   .section-2 {
     display: flex;
     flex-wrap: wrap;
     padding: 100px 80px;
     margin-bottom: 80px;
-  }
 
-  .section-1 {
-    .content-wrapper {
-      padding: 0 50px;
-      margin: 0 auto;
-      width: 50%;
-    }
-
-    .img-wrapper {
-      width: 400px;
-    }
-
-    img {
-      border-radius: 15%;
-      width: 100%;
-    }
-
-    .bg-circle {
-      position: absolute;
-      z-index: -1;
-      width: 500px;
+    @media screen and (max-width: 1024px) {
+      padding: 20px 40px;
+      margin-bottom: 20px;
     }
   }
 
+  .section-1,
   .section-2 {
     .content-wrapper {
       padding: 0 50px;
       margin: 0 auto;
       width: 50%;
+
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+        padding: 0;
+      }
     }
 
     .img-wrapper {
@@ -105,30 +132,30 @@
       border-radius: 25px;
 
       img {
-        // object-fit: contain;
+        object-fit: contain;
         border-radius: 25px;
-        max-width: 350px;
       }
 
       .winner-year {
         display: flex;
         position: absolute;
         left: 40px;
-        // top: 100px;
-        // transform: translate(0, 100px);
         width: 90%;
         opacity: 0;
-      }
+        flex-wrap: wrap;
 
-      // .winner-2019 {
-      //   transform: translate(0, 0);
-      // }
+        @media screen and (max-width: 1024px) {
+          display: block;
+        }
+      }
 
       .winner-details {
         padding: 0 0 0 40px;
         flex: 1;
-        // display: none;
-        // opacity: 0;
+
+        @media screen and (max-width: 1024px) {
+          padding: 0;
+        }
 
         h2 {
           font-size: 48px;
@@ -178,14 +205,15 @@
 
   .nominate-section {
     display: flex;
+    flex-wrap: wrap;
     background-color: $primary-gold;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 20px;
 
     h1 {
       color: white;
-      margin-right: 50px;
     }
 
     button {

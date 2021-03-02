@@ -12,6 +12,49 @@
 	color: #debf57;
 }
 
+.home-template .fullsize-video-bg {
+	position: relative;
+	max-height: 600px;
+}
+
+.home-template .fullsize-video-bg .black-bg {
+	z-index: -2;
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.home-template .fullsize-video-bg .banner-content {
+	display: flex;
+}
+
+.home-template .fullsize-video-bg .banner-content h1 {
+	position: absolute;
+	width: 50%;
+	left: 40px;
+	align-self: center;
+	justify-self: center;
+	font-size: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+	.home-template .fullsize-video-bg .banner-content h1 {
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.home-template .fullsize-video-bg .banner-content h1 {
+		font-size: 20px;
+	}
+}
+
+.home-template .fullsize-video-bg #videoBG {
+	z-index: -1;
+	transform: translate(25%, 0px);
+}
+
 .home-template .section-1,
 .home-template .section-2 {
 	display: flex;
@@ -20,42 +63,41 @@
 	margin-bottom: 80px;
 }
 
-.home-template .section-1 .content-wrapper {
-	padding: 0 50px;
-	margin: 0 auto;
-	width: 50%;
+@media screen and (max-width: 1024px) {
+	.home-template .section-1,
+	.home-template .section-2 {
+		padding: 20px 40px;
+		margin-bottom: 20px;
+	}
 }
 
-.home-template .section-1 .img-wrapper {
-	width: 400px;
-}
-
-.home-template .section-1 img {
-	border-radius: 15%;
-	width: 100%;
-}
-
-.home-template .section-1 .bg-circle {
-	position: absolute;
-	z-index: -1;
-	width: 500px;
-}
-
+.home-template .section-1 .content-wrapper,
 .home-template .section-2 .content-wrapper {
 	padding: 0 50px;
 	margin: 0 auto;
 	width: 50%;
 }
 
+@media screen and (max-width: 1024px) {
+	.home-template .section-1 .content-wrapper,
+	.home-template .section-2 .content-wrapper {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+.home-template .section-1 .img-wrapper,
 .home-template .section-2 .img-wrapper {
 	width: 400px;
 }
 
+.home-template .section-1 img,
 .home-template .section-2 img {
 	border-radius: 15%;
 	width: 100%;
 }
 
+.home-template .section-1 .bg-circle,
 .home-template .section-2 .bg-circle {
 	position: absolute;
 	z-index: -1;
@@ -108,8 +150,8 @@
 }
 
 .home-template .previous-winners .winner-wrapper img {
+	object-fit: contain;
 	border-radius: 25px;
-	max-width: 350px;
 }
 
 .home-template .previous-winners .winner-wrapper .winner-year {
@@ -118,11 +160,24 @@
 	left: 40px;
 	width: 90%;
 	opacity: 0;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+	.home-template .previous-winners .winner-wrapper .winner-year {
+		display: block;
+	}
 }
 
 .home-template .previous-winners .winner-wrapper .winner-details {
 	padding: 0 0 0 40px;
 	flex: 1;
+}
+
+@media screen and (max-width: 1024px) {
+	.home-template .previous-winners .winner-wrapper .winner-details {
+		padding: 0;
+	}
 }
 
 .home-template .previous-winners .winner-wrapper .winner-details h2 {
@@ -170,15 +225,16 @@
 
 .home-template .nominate-section {
 	display: flex;
+	flex-wrap: wrap;
 	background-color: #debf57;
 	text-align: center;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
+	padding: 20px;
 }
 
 .home-template .nominate-section h1 {
 	color: white;
-	margin-right: 50px;
 }
 
 .home-template .nominate-section button {

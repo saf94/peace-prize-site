@@ -7,7 +7,7 @@
 gsap.from('.section-1 .img-wrapper', {
 	scrollTrigger: {
 		trigger: '.section-1',
-		start: "top 70%",
+		start: "top 40%",
 	},
 	duration: 1.5,
 	x: -500,
@@ -17,7 +17,7 @@ gsap.from('.section-1 .img-wrapper', {
 gsap.from('.section-1 .bg-circle', {
 	scrollTrigger: {
 		trigger: '.section-1',
-		start: "top 70%",
+		start: "top 40%",
 	},
 	duration: 1.5,
 	y: 200,
@@ -27,7 +27,7 @@ gsap.from('.section-1 .bg-circle', {
 gsap.from('.section-1 .content-wrapper', {
 	scrollTrigger: {
 		trigger: '.section-1',
-		start: "top 70%",
+		start: "top 40%",
 	},
 	duration: 1.5,
 	x: 500,
@@ -41,7 +41,7 @@ gsap.from('.section-1 .content-wrapper', {
 gsap.from('.section-2 .img-wrapper', {
 	scrollTrigger: {
 		trigger: '.section-2',
-		start: "top 70%",
+		start: "top 40%",
 	},
 	duration: 1.5,
 	x: -500,
@@ -51,7 +51,7 @@ gsap.from('.section-2 .img-wrapper', {
 gsap.from('.section-2 .bg-circle', {
 	scrollTrigger: {
 		trigger: '.section-2',
-		start: "top 70%",
+		start: "top 40%",
 	},
 	duration: 1.5,
 	y: 200,
@@ -61,7 +61,7 @@ gsap.from('.section-2 .bg-circle', {
 gsap.from('.section-2 .content-wrapper', {
 	scrollTrigger: {
 		trigger: '.section-2',
-		start: "top 70%",
+		start: "top 40%",
 	},
 	duration: 1.5,
 	x: 500,
@@ -87,7 +87,6 @@ gsap.to('.previous-winners .winner-2019', {
 		trigger: '.previous-winners',
 	},
 	css: { 
-		display: "flex",
 		position: "static",
 		opacity: "1",
 	},
