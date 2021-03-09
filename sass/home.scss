@@ -33,13 +33,13 @@
         @media screen and (max-width: 1024px) {
           font-size: 40px;
         }
-        
+
         @media screen and (max-width: 768px) {
           font-size: 20px;
         }
       }
     }
-  
+
     #videoBG {
       z-index: -1;
       transform: translate(25%, 0px);
@@ -139,12 +139,12 @@
       .winner-year {
         display: flex;
         position: absolute;
-        left: 40px;
         width: 90%;
         opacity: 0;
         flex-wrap: wrap;
+        word-break: break-word;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1150px) {
           display: block;
         }
       }
@@ -153,13 +153,17 @@
         padding: 0 0 0 40px;
         flex: 1;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1150px) {
           padding: 0;
         }
 
         h2 {
           font-size: 48px;
           margin: 0;
+
+          @media screen and (max-width: 400px) {
+            font-size: 36px;
+          }
         }
 
         h4 {
@@ -198,6 +202,14 @@
           outline: inherit;
           font-size: 16px;
           font-weight: 600;
+        }
+
+        .small-header {
+          font-size: 40px;
+
+          @media screen and (max-width: 400px) {
+            font-size: 36px;
+          }
         }
       }
     }

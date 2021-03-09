@@ -66,7 +66,7 @@
         <div class="winner-year winner-2014">
             <img src="http://peaceprizetest.local/wp-content/uploads/2021/02/magnus-resized.png" />
             <div class="winner-details">
-                <h2>Magnus-MacFarlane-Barrow</h2>
+                <h2 class="small-header">Magnus MacFarlane-Barrow</h2>
                 <h4>Founder of the charity Mary’s Meals</h4>
                 <p>Awarded for his outstanding work to promote education and to relieve poverty. Magnus founded the charity Mary’s Meals (formerly Scottish International Relief) that seeks to provide hungry children with one meal every school day.</p>
                 <button>LEARN MORE</button>

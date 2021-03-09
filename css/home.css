@@ -157,13 +157,13 @@
 .home-template .previous-winners .winner-wrapper .winner-year {
 	display: flex;
 	position: absolute;
-	left: 40px;
 	width: 90%;
 	opacity: 0;
 	flex-wrap: wrap;
+	word-break: break-word;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
 	.home-template .previous-winners .winner-wrapper .winner-year {
 		display: block;
 	}
@@ -174,7 +174,7 @@
 	flex: 1;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
 	.home-template .previous-winners .winner-wrapper .winner-details {
 		padding: 0;
 	}
@@ -183,6 +183,12 @@
 .home-template .previous-winners .winner-wrapper .winner-details h2 {
 	font-size: 48px;
 	margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+	.home-template .previous-winners .winner-wrapper .winner-details h2 {
+		font-size: 36px;
+	}
 }
 
 .home-template .previous-winners .winner-wrapper .winner-details h4 {
@@ -221,6 +227,16 @@
 	outline: inherit;
 	font-size: 16px;
 	font-weight: 600;
+}
+
+.home-template .previous-winners .winner-wrapper .winner-details .small-header {
+	font-size: 40px;
+}
+
+@media screen and (max-width: 400px) {
+	.home-template .previous-winners .winner-wrapper .winner-details .small-header {
+		font-size: 36px;
+	}
 }
 
 .home-template .nominate-section {
