@@ -161,9 +161,11 @@ function peace_prize_scripts() {
 	//ADD CUSTOM JS FILES HERE
 	wp_enqueue_script( 'home-page', get_template_directory_uri() . '/js/home-page.js', array(), false, true );
 	wp_enqueue_script( 'home-banner-resize', get_template_directory_uri() . '/js/home-banner-resize.js', array(), false, true );
+	wp_enqueue_script( 'timeline', get_template_directory_uri() . '/js/timeline.js', array(), false, true );
 
 	//ADD CUSTOM CSS/SCSS FILES HERE
 	wp_enqueue_style( 'home', get_template_directory_uri() .'/css/home.css', array(), false );
+	wp_enqueue_style( 'previous-winners', get_template_directory_uri() .'/css/previous-winners.css', array(), false );
 
 }
 add_action( 'wp_enqueue_scripts', 'peace_prize_scripts' );
