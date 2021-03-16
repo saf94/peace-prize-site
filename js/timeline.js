@@ -7,7 +7,7 @@ document.addEventListener('scroll', function (e) {
   if (viewportWidth < 796) {
     timelineOffset = 240
   } else {
-    timelineOffset = 265
+    timelineOffset = 300
   }
 
   var timeline = document.getElementsByClassName('timeline-2')[0]
