@@ -86,10 +86,13 @@
 	}
 }
 
+.about-us-template .about-section-2 {
+	margin-bottom: 40px;
+}
+
 @media screen and (max-width: 1074px) {
 	.about-us-template .about-section-2 {
 		flex-direction: column-reverse;
-		margin-bottom: 20px;
 	}
 }
 
@@ -115,6 +118,15 @@
 		padding: 20px 40px;
 		margin-bottom: 20px;
 	}
+}
+
+.about-us-template .huzoor-section h1 {
+	margin-bottom: 0;
+}
+
+.about-us-template .huzoor-section .sub-header {
+	margin-top: 5px;
+	margin-bottom: 40px;
 }
 
 .about-us-template .huzoor-section .content-wrapper {

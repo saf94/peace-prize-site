@@ -1,6 +1,6 @@
 <div class="huzoor-section">
     <h1>His Holiness Hazrat Mirza Masroor Ahmad</h1>
-    <p>The Worldwide Head of the Ahmadiyya Muslim Community</p>
+    <p class="sub-header">The Worldwide Head of the Ahmadiyya Muslim Community</p>
     <div class="content-wrapper">
         <div class="details-wrapper">
             <p>His Holiness Hazrat Mirza Masroor Ahmad is the worldwide leader of the Ahmadiyya Muslim Community. Elected to office in April 2003, His Holiness is the fifth Khalifa (Caliph) of the Ahmadiyya Community following the demise of the founder in 1908 .He leads the global community that is now established in over 213 countries with tens of millions of members worldwide.</p>
