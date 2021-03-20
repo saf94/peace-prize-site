@@ -25,43 +25,30 @@
 .about-us-template .about-section-2 {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 20px 120px;
+	padding: 20px 0;
+	width: 60%;
+	margin: 0 auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1074px) {
 	.about-us-template .about-section-1,
 	.about-us-template .about-section-2 {
 		padding: 20px 40px;
-		margin-bottom: 20px;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.about-us-template .about-section-1,
-	.about-us-template .about-section-2 {
 		flex-direction: column;
+		width: 100%;
 	}
 }
 
 .about-us-template .about-section-1 .content-wrapper,
 .about-us-template .about-section-2 .content-wrapper {
-	padding: 0 50px;
 	flex: 1;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1074px) {
 	.about-us-template .about-section-1 .content-wrapper,
 	.about-us-template .about-section-2 .content-wrapper {
 		width: 100%;
 		padding: 0;
-		padding-right: 50px;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.about-us-template .about-section-1 .content-wrapper,
-	.about-us-template .about-section-2 .content-wrapper {
-		padding-right: 0;
 	}
 }
 
@@ -89,9 +76,20 @@
 	font-size: 12px;
 }
 
-@media screen and (max-width: 768px) {
+.about-us-template .about-section-1 .content-wrapper {
+	padding-right: 50px;
+}
+
+@media screen and (max-width: 1074px) {
+	.about-us-template .about-section-1 .content-wrapper {
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width: 1074px) {
 	.about-us-template .about-section-2 {
 		flex-direction: column-reverse;
+		margin-bottom: 20px;
 	}
 }
 
@@ -99,19 +97,21 @@
 	padding-left: 50px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1074px) {
 	.about-us-template .about-section-2 .content-wrapper {
 		padding-left: 0;
 	}
 }
 
 .about-us-template .huzoor-section {
-	padding: 20px 120px;
 	text-align: center;
+	width: 60%;
+	margin: 0 auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1074px) {
 	.about-us-template .huzoor-section {
+		width: 100%;
 		padding: 20px 40px;
 		margin-bottom: 20px;
 	}
@@ -134,7 +134,7 @@
 	padding-right: 40px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1074px) {
 	.about-us-template .huzoor-section .content-wrapper .details-wrapper {
 		flex: 1;
 	}
@@ -199,7 +199,7 @@
 	border-radius: 25px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1074px) {
 	.about-us-template .huzoor-world-leaders-section .world-leaders img {
 		width: 40%;
 		margin: 20px 20px;

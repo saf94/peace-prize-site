@@ -22,29 +22,22 @@
   .about-section-2 {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 120px;
+    padding: 20px 0;
+    width: 60%;
+    margin: 0 auto;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1074px) {
       padding: 20px 40px;
-      margin-bottom: 20px;
-    }
-
-    @media screen and (max-width: 768px) {
       flex-direction: column;
+      width: 100%;
     }
 
     .content-wrapper {
-      padding: 0 50px;
       flex: 1;
 
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 1074px) {
         width: 100%;
         padding: 0;
-        padding-right: 50px;
-      }
-
-      @media screen and (max-width: 768px) {
-        padding-right: 0;
       }
     }
 
@@ -70,25 +63,38 @@
     }
   }
 
+  .about-section-1 {
+    .content-wrapper {
+      padding-right: 50px;
+
+      @media screen and (max-width: 1074px) {
+        padding-right: 0;
+      }
+    }
+  }
+
   .about-section-2 {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1074px) {
       flex-direction: column-reverse;
+      margin-bottom: 20px;
     }
 
     .content-wrapper {
       padding-left: 50px;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1074px) {
         padding-left: 0;
       }
     }
   }
 
   .huzoor-section {
-    padding: 20px 120px;
     text-align: center;
+    width: 60%;
+    margin: 0 auto;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1074px) {
+      width: 100%;
       padding: 20px 40px;
       margin-bottom: 20px;
     }
@@ -106,7 +112,7 @@
         flex: 2;
         padding-right: 40px;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1074px) {
           flex: 1;
         }
 
@@ -164,7 +170,7 @@
         margin: 0 20px;
         border-radius: 25px;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1074px) {
           width: 40%;
           margin: 20px 20px;
         }
