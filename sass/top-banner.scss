@@ -1,0 +1,17 @@
+.top-banner {
+  display: flex;
+
+  .banner-right {
+    position: relative;
+
+    .banner-circle {
+        width: 500px;
+    }
+
+    .banner-image {
+        width: 200px;
+        position: absolute;
+        left: 0;
+    }
+  }
+}

@@ -166,6 +166,7 @@ function peace_prize_scripts() {
 	//ADD CUSTOM CSS/SCSS FILES HERE
 	wp_enqueue_style( 'home', get_template_directory_uri() .'/css/home.css', array(), false );
 	wp_enqueue_style( 'previous-winners', get_template_directory_uri() .'/css/previous-winners.css', array(), false );
+	wp_enqueue_style( 'about-us', get_template_directory_uri() .'/css/about-us.css', array(), false );
 
 }
 add_action( 'wp_enqueue_scripts', 'peace_prize_scripts' );
