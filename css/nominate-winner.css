@@ -1,0 +1,44 @@
+@font-face {
+	font-family: Poppins;
+	src: url("fonts/Poppins-Regular.ttf");
+	font-weight: normal;
+}
+
+.nominate-winner-template .header {
+	text-align: center;
+	background-color: #ebebeb;
+	padding: 40px 0;
+	border-bottom: solid 10px #debf57;
+}
+
+.nominate-winner-template .header h1 {
+	font-size: 60px;
+	margin: 10px 0;
+}
+
+.nominate-winner-template .header p {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.nominate-winner-template .criteria-content {
+	padding: 0 60px;
+}
+
+.nominate-winner-template .dropdown-wrapper {
+	background-color: black;
+	padding: 20px 40px;
+	color: white;
+	border-radius: 25px;
+}
+
+.nominate-winner-template .dropdown-wrapper h2 {
+	color: #debf57;
+}
+
+.nominate-winner-template .dropdown-wrapper .dropdown-content {
+	height: 0;
+	overflow: hidden;
+}
+
+/*# sourceMappingURL=nominate-winner.css.map */
