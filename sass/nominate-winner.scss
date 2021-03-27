@@ -19,22 +19,30 @@
   }
 
   .criteria-content {
-    padding: 0 60px;
+    width: 70%;
+    margin: 0 auto;
   }
 
   .dropdown-wrapper {
     background-color: black;
-    padding: 20px 40px;
+    padding: 5px 40px;
     color: white;
-    border-radius: 25px;
+    border-radius: 10px;
+    margin-bottom: 5px;
 
     h2 {
       color: $primary-gold;
+      margin: 5px 0;
+      font-size: 20px;
     }
 
     .dropdown-content {
-        height: 0;
-        overflow: hidden;
+      height: 0;
+      overflow: hidden;
     }
+  }
+
+  .nomination-form {
+    margin-top: 40px;
   }
 }

@@ -22,23 +22,31 @@
 }
 
 .nominate-winner-template .criteria-content {
-	padding: 0 60px;
+	width: 70%;
+	margin: 0 auto;
 }
 
 .nominate-winner-template .dropdown-wrapper {
 	background-color: black;
-	padding: 20px 40px;
+	padding: 5px 40px;
 	color: white;
-	border-radius: 25px;
+	border-radius: 10px;
+	margin-bottom: 5px;
 }
 
 .nominate-winner-template .dropdown-wrapper h2 {
 	color: #debf57;
+	margin: 5px 0;
+	font-size: 20px;
 }
 
 .nominate-winner-template .dropdown-wrapper .dropdown-content {
 	height: 0;
 	overflow: hidden;
+}
+
+.nominate-winner-template .nomination-form {
+	margin-top: 40px;
 }
 
 /*# sourceMappingURL=nominate-winner.css.map */

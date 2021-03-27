@@ -1,6 +1,6 @@
-<div class="dropdown-wrapper">
+<div class="dropdown-wrapper criteria-dropdown-wrapper">
     <h2>Critera</h2>
-    <div class="dropdown-content">
+    <div class="dropdown-content criteria-dropdown-content">
         <p>
             All nominations will be appraised in light of the Ahmadiyya Muslim Jama’at’s (Islam’s) ideological framework and will also consider:
         </p>
