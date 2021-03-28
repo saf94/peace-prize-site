@@ -1,0 +1,56 @@
+@import 'theme';
+
+.site-footer {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+
+  h3 {
+      margin-bottom: 10px;
+  }
+
+  p {
+    margin: 2px 0;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary-gold;
+    }
+  }
+
+  .site-info {
+    padding: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .site-map {
+      flex: 1;
+    }
+
+    .links {
+      flex: 1;
+    }
+
+    .contact {
+      flex: 1;
+    }
+  }
+
+  .policies {
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+
+    .jamaat-decleration {
+        font-size: 10px;
+        color: #808080;
+        font-style: italic;
+        margin-top: 10px;
+    }
+  }
+}
