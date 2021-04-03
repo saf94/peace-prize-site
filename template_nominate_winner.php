@@ -18,6 +18,7 @@
         get_template_part('template-parts/nominate-winner/timeline-dropdown', 'none');
         ?>
         <div class="nomination-form">
+            <h2>Nomination Form</h2>
             <?php echo do_shortcode('[forminator_form id="56"]'); ?>
         </div>
     </div>

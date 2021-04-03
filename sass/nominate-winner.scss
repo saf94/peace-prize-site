@@ -29,6 +29,7 @@
     color: white;
     border-radius: 10px;
     margin-bottom: 5px;
+    cursor: pointer;
 
     h2 {
       color: $primary-gold;
@@ -44,5 +45,9 @@
 
   .nomination-form {
     margin-top: 40px;
+
+    h2 {
+      text-align: center;
+    }
   }
 }

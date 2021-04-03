@@ -32,6 +32,7 @@
 	color: white;
 	border-radius: 10px;
 	margin-bottom: 5px;
+	cursor: pointer;
 }
 
 .nominate-winner-template .dropdown-wrapper h2 {
@@ -47,6 +48,10 @@
 
 .nominate-winner-template .nomination-form {
 	margin-top: 40px;
+}
+
+.nominate-winner-template .nomination-form h2 {
+	text-align: center;
 }
 
 /*# sourceMappingURL=nominate-winner.css.map */
