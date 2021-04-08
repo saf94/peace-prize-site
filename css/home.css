@@ -60,7 +60,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding: 100px 80px;
-	margin-bottom: 80px;
+	margin: 80px 0;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 }
 
 @media screen and (max-width: 1024px) {
@@ -71,11 +74,17 @@
 	}
 }
 
+.home-template .section-1 h1,
+.home-template .section-2 h1 {
+	color: black;
+}
+
 .home-template .section-1 .content-wrapper,
 .home-template .section-2 .content-wrapper {
-	padding: 0 50px;
-	margin: 0 auto;
-	width: 50%;
+	padding: 0 70px;
+	width: 40%;
+	position: relative;
+	z-index: 1;
 }
 
 @media screen and (max-width: 1024px) {
@@ -86,14 +95,33 @@
 	}
 }
 
+.home-template .section-1 .content-wrapper .header-wrapper,
+.home-template .section-2 .content-wrapper .header-wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+.home-template .section-1 .content-wrapper .header-wrapper .animated-bg-content,
+.home-template .section-2 .content-wrapper .header-wrapper .animated-bg-content {
+	opacity: 0;
+	transform: translate(0, 10px);
+	width: 50%;
+	height: 10%;
+	bottom: 15px;
+	background-color: #debf57;
+	position: absolute;
+	z-index: -1;
+}
+
 .home-template .section-1 .img-wrapper,
 .home-template .section-2 .img-wrapper {
-	width: 400px;
+	width: 600px;
+	position: relative;
+	opacity: 0;
 }
 
 .home-template .section-1 img,
 .home-template .section-2 img {
-	border-radius: 15%;
 	width: 100%;
 }
 
@@ -102,6 +130,49 @@
 	position: absolute;
 	z-index: -1;
 	width: 500px;
+}
+
+.home-template .section-1 .animated-bg-img,
+.home-template .section-2 .animated-bg-img {
+	width: 100%;
+	height: 100%;
+	background-color: #ffe796;
+	position: absolute;
+	z-index: 0;
+}
+
+.home-template .section-1 .static-bg-img,
+.home-template .section-2 .static-bg-img {
+	width: 80%;
+	height: 90%;
+	background-color: #ffe796;
+	position: absolute;
+	z-index: -1;
+}
+
+.home-template .section-1 .initial-bg-img,
+.home-template .section-2 .initial-bg-img {
+	width: 100%;
+	height: 90%;
+	background-color: #ffe796;
+	position: absolute;
+	z-index: 2;
+}
+
+.home-template .section-1 .img-wrapper {
+	height: 522px;
+}
+
+.home-template .section-1 .static-bg-img {
+	right: 0;
+}
+
+.home-template .section-2 .img-wrapper {
+	width: 600px;
+}
+
+.home-template .section-2 .static-bg-img {
+	left: 0;
 }
 
 .home-template .previous-winners {

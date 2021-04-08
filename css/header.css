@@ -59,6 +59,7 @@
 
 .site-header .navbar a {
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .site-header .navbar p {
