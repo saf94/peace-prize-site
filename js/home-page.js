@@ -34,7 +34,7 @@ window.onload = (event) => {
     transformOrigin: "top right",
     ease: "power2.out",
     duration: 2,
-  }, 0.5)
+  }, 0.7)
 
   tl.from('.section-1 .content-wrapper', {
     // css: {

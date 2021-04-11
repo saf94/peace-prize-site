@@ -23,11 +23,10 @@
 
 .about-us-template .about-section-1,
 .about-us-template .about-section-2 {
-	display: flex;
-	flex-wrap: wrap;
 	padding: 20px 0;
 	width: 60%;
 	margin: 0 auto;
+	margin-top: 40px;
 }
 
 @media screen and (max-width: 1074px) {
@@ -37,6 +36,18 @@
 		flex-direction: column;
 		width: 100%;
 	}
+}
+
+.about-us-template .about-section-1 h2,
+.about-us-template .about-section-2 h2 {
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+.about-us-template .about-section-1 p,
+.about-us-template .about-section-2 p {
+	margin-top: 5px;
 }
 
 .about-us-template .about-section-1 .content-wrapper,
@@ -56,6 +67,9 @@
 .about-us-template .about-section-2 .img-wrapper {
 	width: 300px;
 	position: relative;
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 15px;
 }
 
 .about-us-template .about-section-1 .img-wrapper img,
@@ -66,14 +80,10 @@
 
 .about-us-template .about-section-1 .img-wrapper .img-caption,
 .about-us-template .about-section-2 .img-wrapper .img-caption {
-	background-color: #debf57;
-	padding: 10px;
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	position: absolute;
-	bottom: 0;
 	text-align: center;
-	font-size: 12px;
+	font-size: 10px;
 }
 
 .about-us-template .about-section-1 .content-wrapper {
@@ -110,6 +120,7 @@
 	text-align: center;
 	width: 60%;
 	margin: 0 auto;
+	margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1074px) {
@@ -130,7 +141,6 @@
 }
 
 .about-us-template .huzoor-section .content-wrapper {
-	display: flex;
 	flex-wrap: wrap;
 	text-align: left;
 }
@@ -162,34 +172,39 @@
 	margin-top: 0;
 }
 
-.about-us-template .huzoor-section .content-wrapper .images-wrapper {
-	flex: 1;
-}
-
-.about-us-template .huzoor-section .content-wrapper .images-wrapper .img-wrapper {
+.about-us-template .huzoor-section .content-wrapper .img-wrapper {
 	position: relative;
-	margin-bottom: 40px;
+	width: 40%;
 }
 
-.about-us-template .huzoor-section .content-wrapper .images-wrapper .img-wrapper img {
+.about-us-template .huzoor-section .content-wrapper .img-wrapper img {
 	border-radius: 25px;
 	width: 100%;
 }
 
-.about-us-template .huzoor-section .content-wrapper .images-wrapper .img-wrapper .img-caption {
-	background-color: #debf57;
-	padding: 10px;
+.about-us-template .huzoor-section .content-wrapper .img-wrapper .img-caption {
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	position: absolute;
-	bottom: -10px;
 	text-align: center;
 	font-size: 10px;
 	width: 100%;
 }
 
+.about-us-template .huzoor-section .content-wrapper .img-one {
+	float: right;
+	margin-left: 25px;
+	margin-bottom: 25px;
+}
+
+.about-us-template .huzoor-section .content-wrapper .img-two {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+
 .about-us-template .huzoor-world-leaders-section {
 	text-align: center;
+	margin: 60px 0;
 }
 
 .about-us-template .huzoor-world-leaders-section .world-leaders {
