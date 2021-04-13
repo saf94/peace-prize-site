@@ -4,6 +4,12 @@
 	font-weight: normal;
 }
 
+@font-face {
+	font-family: Kano;
+	src: url("fonts/Kano.ttf");
+	font-weight: normal;
+}
+
 .home-template {
 	font-family: Poppins;
 }
@@ -15,6 +21,7 @@
 .home-template .fullsize-video-bg {
 	position: relative;
 	max-height: calc(100vh - 100px);
+	z-index: -1;
 }
 
 .home-template .fullsize-video-bg .black-bg {
@@ -28,27 +35,45 @@
 .home-template .fullsize-video-bg .banner-content {
 	display: flex;
 	overflow: hidden;
+	border-right: 5px solid #debf57;
+	border-left: 5px solid #debf57;
+	border-bottom: 5px solid #debf57;
+	z-index: -2;
+	padding-left: 20px;
 }
 
-.home-template .fullsize-video-bg .banner-content h1 {
-	position: absolute;
+.home-template .fullsize-video-bg .banner-content .header-wrapper {
 	width: 50%;
 	left: 40px;
 	align-self: center;
 	justify-self: center;
+	background-color: #000;
+	transform: translate(30px, 0);
+}
+
+.home-template .fullsize-video-bg .banner-content .header-wrapper h1 {
 	font-size: 60px;
 }
 
 @media screen and (max-width: 1024px) {
-	.home-template .fullsize-video-bg .banner-content h1 {
+	.home-template .fullsize-video-bg .banner-content .header-wrapper h1 {
 		font-size: 40px;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	.home-template .fullsize-video-bg .banner-content h1 {
+	.home-template .fullsize-video-bg .banner-content .header-wrapper h1 {
 		font-size: 20px;
 	}
+}
+
+.home-template .fullsize-video-bg .banner-content .triangle-down {
+	width: 0;
+	height: 0;
+	border-right: 100px solid transparent;
+	position: relative;
+	left: 100px;
+	border-top: 610px solid #000;
 }
 
 .home-template .fullsize-video-bg #videoBG {
@@ -56,30 +81,41 @@
 	transform: translate(25%, 0px);
 }
 
+.home-template .fullsize-video-bg .slideshow-wrapper {
+	width: 50%;
+	z-index: -2;
+	text-align: right;
+	justify-content: left;
+	display: flex;
+	position: relative;
+}
+
+.home-template .fullsize-video-bg .slideshow-wrapper .overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+
+.home-template .fullsize-video-bg .slideshow-wrapper .img-1,
+.home-template .fullsize-video-bg .slideshow-wrapper .img-2,
+.home-template .fullsize-video-bg .slideshow-wrapper .img-3,
+.home-template .fullsize-video-bg .slideshow-wrapper .img-4,
+.home-template .fullsize-video-bg .slideshow-wrapper .img-5 {
+	display: none;
+	opacity: 0;
+}
+
 .home-template .section-1,
 .home-template .section-2 {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 100px 80px;
-	margin: 80px 0;
-	justify-content: center;
+	width: 80%;
+	margin: 80px auto;
 	align-items: center;
 	position: relative;
-}
-
-@media screen and (max-width: 1160px) {
-	.home-template .section-1,
-	.home-template .section-2 {
-		background-color: #ffe796;
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	.home-template .section-1,
-	.home-template .section-2 {
-		padding: 20px 40px;
-		margin-bottom: 20px;
-	}
+	border: 5px solid #debf57;
 }
 
 .home-template .section-1 h1,
@@ -90,25 +126,10 @@
 .home-template .section-1 .content-wrapper,
 .home-template .section-2 .content-wrapper {
 	padding: 0 70px;
-	width: 40%;
+	flex: 1;
 	position: relative;
 	z-index: 1;
-}
-
-@media screen and (max-width: 1160px) {
-	.home-template .section-1 .content-wrapper,
-	.home-template .section-2 .content-wrapper {
-		padding: 0;
-		width: 80%;
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	.home-template .section-1 .content-wrapper,
-	.home-template .section-2 .content-wrapper {
-		width: 100%;
-		padding: 0;
-	}
+	min-width: 350px;
 }
 
 .home-template .section-1 .content-wrapper .header-wrapper,
@@ -122,7 +143,7 @@
 	opacity: 0;
 	transform: translate(0, 10px);
 	width: 50%;
-	height: 10%;
+	height: 5px;
 	bottom: 15px;
 	background-color: #debf57;
 	position: absolute;
@@ -148,56 +169,61 @@
 	width: 100%;
 }
 
-.home-template .section-1 .bg-circle,
-.home-template .section-2 .bg-circle {
+.home-template .section-1 .bg-pattern,
+.home-template .section-2 .bg-pattern {
+	background-position: center;
+	background-repeat: repeat;
+	background-size: contain;
 	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.2;
+	z-index: -2;
+}
+
+.home-template .section-1 .content-overlay,
+.home-template .section-2 .content-overlay {
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-color: #fff;
 	z-index: -1;
-	width: 500px;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
 }
 
 .home-template .section-1 .animated-bg-img,
 .home-template .section-2 .animated-bg-img {
 	width: 100%;
 	height: 100%;
-	background-color: #ffe796;
+	background-color: #debf57;
 	position: absolute;
 	z-index: 0;
-}
-
-.home-template .section-1 .static-bg-img,
-.home-template .section-2 .static-bg-img {
-	width: 80%;
-	height: 90%;
-	background-color: #ffe796;
-	position: absolute;
-	z-index: -1;
-}
-
-@media screen and (max-width: 1160px) {
-	.home-template .section-1 .static-bg-img,
-	.home-template .section-2 .static-bg-img {
-		display: none;
-	}
 }
 
 .home-template .section-1 .img-wrapper {
 	height: 522px;
 }
 
-@media screen and (min-width: 1160px) {
-	.home-template .section-1 .static-bg-img {
-		right: 0;
-	}
+.home-template .section-1 .bg-pattern {
+	top: 0;
+	right: 0;
+}
+
+.home-template .section-2 {
+	justify-content: flex-end;
 }
 
 .home-template .section-2 .img-wrapper {
-	width: 600px;
+	height: 555px;
 }
 
-@media screen and (min-width: 1160px) {
-	.home-template .section-2 .static-bg-img {
-		left: 0;
-	}
+.home-template .section-2 .bg-pattern {
+	top: 0;
+	left: 0;
 }
 
 .home-template .previous-winners {
@@ -233,21 +259,20 @@
 }
 
 .home-template .previous-winners .winner-wrapper {
+	opacity: 0;
 	text-align: left;
-	backdrop-filter: blur(6px);
 	max-width: 70%;
 	justify-content: space-evenly;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	background-color: rgba(255, 255, 255, 0.15);
 	padding: 40px 0;
-	border-radius: 25px;
+	border: 5px solid #debf57;
+	position: relative;
 }
 
 .home-template .previous-winners .winner-wrapper img {
 	object-fit: contain;
-	border-radius: 25px;
 }
 
 .home-template .previous-winners .winner-wrapper .winner-year {
@@ -279,6 +304,7 @@
 .home-template .previous-winners .winner-wrapper .winner-details h2 {
 	font-size: 48px;
 	margin: 0;
+	color: #debf57;
 }
 
 @media screen and (max-width: 400px) {
@@ -292,6 +318,7 @@
 	font-style: italic;
 	margin: 0;
 	margin-bottom: 30px;
+	color: #debf57;
 }
 
 .home-template .previous-winners .winner-wrapper .winner-details h3 {
@@ -312,9 +339,12 @@
 	position: relative;
 }
 
-.home-template .previous-winners .winner-wrapper .winner-details button {
+.home-template .previous-winners .winner-wrapper .winner-details a {
+	color: white;
+}
+
+.home-template .previous-winners .winner-wrapper .winner-details a button {
 	background: #debf57;
-	border-radius: 25px;
 	padding: 10px;
 	width: 150px;
 	color: inherit;
@@ -351,7 +381,6 @@
 
 .home-template .nominate-section button {
 	background: #000;
-	border-radius: 25px;
 	padding: 10px;
 	width: 150px;
 	color: #fff;

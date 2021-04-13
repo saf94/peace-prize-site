@@ -3,6 +3,9 @@
 ?>
 
 <div class="section-2">
+    <div class="bg-pattern" style="background-image: url(<?php bloginfo('template_url'); ?>/images/background-pattern.png" );>
+    </div>
+    <div class="content-overlay"></div>
     <div class="content-wrapper">
         <div class="animated-bg-content"></div>
         <div class="header-wrapper">
@@ -14,8 +17,6 @@
             The Ahmadiyya Muslim community is dedicated to establish peace at all levels and to protect the basic human rights of all. In light of this it is keen to recognise efforts made by anyone to advance the cause of peace.
         </p>
     </div>
-    <!-- <div class="initial-bg-img"></div> -->
-    <div class="static-bg-img"></div>
     <div class="img-wrapper">
         <div class="animated-bg-img"></div>
         <img src="http://ahmadiyyapeaceprize.com/wp-content/uploads/2021/04/Fred-Award-scaled.jpg" />

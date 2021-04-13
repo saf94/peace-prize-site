@@ -4,6 +4,12 @@
 	font-weight: normal;
 }
 
+@font-face {
+	font-family: Kano;
+	src: url("fonts/Kano.ttf");
+	font-weight: normal;
+}
+
 .about-us-template .header {
 	text-align: center;
 	background-color: #ebebeb;

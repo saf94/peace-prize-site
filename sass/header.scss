@@ -2,10 +2,13 @@
 
 .site-header {
   background-color: #000;
-  padding: 20px;
+  padding: 20px 0 0 0;
+  border-right: 5px solid $primary-gold;
+  border-left: 5px solid $primary-gold;
+  border-top: 5px solid $primary-gold;
 
   @media screen and (max-width: 500px) {
-      text-align: center;
+    text-align: center;
   }
 
   .mobile-nav {
@@ -30,7 +33,7 @@
     border-top: solid 1px;
     border-bottom: solid 1px;
     border-color: rgba(222, 191, 87, 0.3);
-    
+
     @media screen and (max-width: 968px) {
       align-items: center;
     }

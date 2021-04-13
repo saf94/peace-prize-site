@@ -3,13 +3,15 @@
 ?>
 
 <div class="section-1">
-    <!-- <div class="initial-bg-img"></div> -->
-    <div class="static-bg-img"></div>
+    <div class="bg-pattern" style="background-image: url(<?php bloginfo('template_url'); ?>/images/background-pattern.png" );>
+    </div>
+    <div class="content-overlay"></div>
     <div class="img-wrapper">
         <div class="animated-bg-img"></div>
         <img src="http://ahmadiyyapeaceprize.com/wp-content/uploads/2021/04/PS3_1435-ADJ.jpg" />
     </div>
     <div class="content-wrapper">
+
         <div class="header-wrapper">
             <div class="animated-bg-content"></div>
             <h1>DEDICATION TO PEACE</h1>
