@@ -1,0 +1,122 @@
+@import 'theme';
+
+.previous-winners-template {
+  background-color: $logo-beige;
+  color: #000;
+  overflow: hidden;
+
+  .header {
+    color: $logo-text-brown;
+    text-align: center;
+    font-size: 70px;
+  }
+
+  .sub-header {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #000;
+
+    @media screen and (max-width: 796px) {
+      padding: 40px;
+    }
+  }
+
+  .previous-winners-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    .winners {
+      flex: 1;
+    }
+
+    .prev-winner {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 200px;
+      position: relative;
+
+      @media screen and (max-width: 796px) {
+        padding: 40px;
+        display: block;
+      }
+
+      .prev-winner-image {
+        width: 48%;
+        text-align: right;
+
+        @media screen and (max-width: 796px) {
+          width: 100%;
+          text-align: left;
+        }
+      }
+
+      .prev-winner-marker {
+        position: absolute;
+        top: 50%;
+        left: calc((100% - 21px) / 2);
+        width: 21px;
+        height: 21px;
+        border: 4px solid #474747;
+        border-radius: 21px;
+        background-color: black;
+        z-index: 2;
+
+        @media screen and (max-width: 796px) {
+          left: 4px;
+        }
+      }
+
+      .prev-winner-details {
+        width: 48%;
+        padding-right: 15%;
+        align-self: center;
+
+        @media screen and (max-width: 796px) {
+          width: 100%;
+          padding: 0;
+        }
+
+        p {
+          margin: 0;
+        }
+
+        h2 {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .timeline-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+      .timeline {
+        width: 4px;
+        height: 100%;
+        background-color: #474747;
+        position: absolute;
+        left: calc((100% - 4px) / 2);
+
+        @media screen and (max-width: 796px) {
+          left: 12px;
+        }
+      }
+
+      .timeline-2 {
+        height: 0px;
+        z-index: 2;
+        background-color: #000;
+        transition: height 500ms ease-out 0s;
+        transform: translate3d(0px, 0px, 0px);
+
+        @media screen and (max-width: 796px) {
+          left: 0;
+        }
+      }
+    }
+  }
+}

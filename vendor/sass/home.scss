@@ -1,0 +1,313 @@
+@import 'theme';
+$section: #ffe796;
+
+body {
+  background-image: url('../images/bf.png');
+}
+
+.home-template {
+  font-family: Poppins;
+
+  h1 {
+    color: #000;
+  }
+
+  .fullsize-video-bg {
+    position: relative;
+    max-height: 600px;
+
+    .black-bg {
+      z-index: -2;
+      background-color: #000;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+
+    .banner-content {
+      display: flex;
+
+      h1 {
+        position: absolute;
+        width: 50%;
+        left: 40px;
+        align-self: center;
+        justify-self: center;
+        font-size: 60px;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 40px;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    #videoBG {
+      z-index: -1;
+      transform: translate(25%, 0px);
+    }
+  }
+
+  .section-1,
+  .section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 80px;
+    margin: 80px 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+      padding: 20px 40px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: black;
+    }
+
+    .content-wrapper {
+      padding: 0 70px;
+      width: 40%;
+      position: relative;
+      z-index: 1;
+
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+        padding: 0;
+      }
+
+      .header-wrapper {
+        position: relative;
+        display:inline-block; 
+
+        .animated-bg-content {
+          opacity: 0;
+          transform: translate(0, 10px);
+          width: 50%;
+          height: 15%;
+          bottom: 10px;
+          background-color: #000;
+          position: absolute;
+          z-index: -1;
+        }
+      }
+    }
+
+    .img-wrapper {
+      width: 600px;
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .bg-circle {
+      position: absolute;
+      z-index: -1;
+      width: 500px;
+    }
+
+    .animated-bg-img {
+      width: 100%;
+      height: 100%;
+      background-color: $section;
+      position: absolute;
+      z-index: 0;
+    }
+
+    .static-bg-img {
+      width: 80%;
+      height: 90%;
+      background-color: $section;
+      position: absolute;
+      z-index: -1;
+    }
+    .initial-bg-img {
+      width: 100%;
+      height: 90%;
+      background-color: $section;
+      position: absolute;
+      z-index: 2;
+    }
+  }
+
+  .section-1 {
+    .img-wrapper {
+      height: 522px;
+    }
+
+    .static-bg-img {
+      right: 0;
+    }
+  }
+
+  .section-2 {
+    .img-wrapper {
+      width: 700px;
+    }
+
+    .static-bg-img {
+      left: 0;
+    }
+  }
+
+  .previous-winners {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 100px 0;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 40px;
+
+      li {
+        display: inline-block;
+        padding: 0 5px;
+        color: #4b4949;
+        cursor: pointer;
+      }
+
+      li.active {
+        color: #debf57;
+        font-weight: 600;
+      }
+    }
+
+    .winners {
+      justify-content: space-evenly;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .winner-wrapper {
+      text-align: left;
+      backdrop-filter: blur(6px);
+      max-width: 70%;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 40px 0;
+      border-radius: 25px;
+
+      img {
+        object-fit: contain;
+        border-radius: 25px;
+      }
+
+      .winner-year {
+        display: flex;
+        position: absolute;
+        width: 90%;
+        opacity: 0;
+        flex-wrap: wrap;
+        word-break: break-word;
+
+        @media screen and (max-width: 1150px) {
+          display: block;
+        }
+      }
+
+      .winner-details {
+        padding: 0 0 0 40px;
+        flex: 1;
+
+        @media screen and (max-width: 1150px) {
+          padding: 0;
+        }
+
+        h2 {
+          font-size: 48px;
+          margin: 0;
+
+          @media screen and (max-width: 400px) {
+            font-size: 36px;
+          }
+        }
+
+        h4 {
+          font-size: 18px;
+          font-style: italic;
+          margin: 0;
+          margin-bottom: 30px;
+        }
+
+        h3 {
+          position: absolute;
+          transform: rotate(90deg);
+          bottom: 0;
+          right: 0;
+          font-size: 200px;
+          width: 260px;
+          word-break: break-word;
+          margin: 0;
+          line-height: 200px;
+          color: black;
+          z-index: -1;
+        }
+
+        p {
+          position: relative;
+        }
+
+        button {
+          background: $primary-gold;
+          border-radius: 25px;
+          padding: 10px;
+          width: 150px;
+          color: inherit;
+          border: none;
+          cursor: pointer;
+          outline: inherit;
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .small-header {
+          font-size: 40px;
+
+          @media screen and (max-width: 400px) {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
+
+  .nominate-section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+    h1 {
+      color: white;
+    }
+
+    button {
+      background: #000;
+      border-radius: 25px;
+      padding: 10px;
+      width: 150px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      outline: inherit;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@font-face {
+	font-family: Poppins;
+	src: url("fonts/Poppins-Regular.ttf");
+	font-weight: normal;
+}
+
+.site-footer {
+	background-color: black;
+	color: white;
+	font-size: 14px;
+}
+
+.site-footer h3 {
+	margin-bottom: 10px;
+}
+
+.site-footer p {
+	margin: 2px 0;
+}
+
+.site-footer a {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.site-footer a:hover {
+	color: #debf57;
+}
+
+.site-footer .site-info {
+	padding: 40px 80px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.site-footer .site-info .site-map {
+	flex: 1;
+}
+
+.site-footer .site-info .links {
+	flex: 1;
+}
+
+.site-footer .site-info .contact {
+	flex: 1;
+}
+
+.site-footer .policies {
+	text-align: center;
+	font-size: 12px;
+	padding: 20px;
+}
+
+.site-footer .policies .jamaat-decleration {
+	font-size: 10px;
+	color: #808080;
+	font-style: italic;
+	margin-top: 10px;
+}
+
+/*# sourceMappingURL=footer.css.map */
