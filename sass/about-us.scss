@@ -3,9 +3,10 @@
 .about-us-template {
   .header {
     text-align: center;
-    background-color: #ebebeb;
+    background-color: $logo-beige;
     padding: 40px 0;
-    border-bottom: solid 10px $primary-gold;
+    border: solid 6px $logo-text-brown;
+    border-top: none;
 
     h1 {
       font-size: 60px;

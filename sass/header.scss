@@ -23,7 +23,6 @@
     @media screen and (max-width: 500px) {
       display: block;
       opacity: 1;
-      // margin: 10px;
     }
   }
 
@@ -78,28 +77,13 @@
       position: relative;
       width: 200px;
       height: auto;
-      // top: -22px;
-
-      @media screen and (max-width: 968px) {
-        // top: -42px;
-      }
 
       @media screen and (max-width: 768px) {
         display: none;
       }
 
       img {
-        width: 150px;
-        // position: absolute;
-      }
-
-      .image-1 {
         width: 200px;
-        height: auto;
-      }
-
-      .image-2 {
-        width: 100px;
         left: 50px;
         top: 10px;
       }

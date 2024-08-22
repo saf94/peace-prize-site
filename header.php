@@ -40,9 +40,12 @@
  			<!-- <img class="image-1" src="<?php bloginfo(
         'template_url'
     ); ?>/images/shape.png"/> -->
+ 			<!-- <img class="image-2" src="<?php bloginfo(
+        'template_url'
+    ); ?>/images/peace-prize-logo-remove-no-bg.png"/> -->
  			<img class="image-2" src="<?php bloginfo(
         'template_url'
-    ); ?>/images/peace-prize-logo-remove-no-bg.png"/>
+    ); ?>/images/peace-prize-logo-side.png"/>
 		</div>
 		<a href="/previous-winners">
 			<p>Previous Winners</p>

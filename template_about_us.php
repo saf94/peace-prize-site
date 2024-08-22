@@ -9,7 +9,7 @@
     <?php
     get_template_part('template-parts/about-us/about-section-1', 'none');
     get_template_part('template-parts/about-us/huzoor-section', 'none');
-    get_template_part('template-parts/about-us/huzoor-world-leaders', 'none');
+    // get_template_part('template-parts/about-us/huzoor-world-leaders', 'none');
     ?>
 </div>
 

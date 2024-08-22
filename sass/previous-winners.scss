@@ -60,9 +60,9 @@
         left: calc((100% - 21px) / 2);
         width: 21px;
         height: 21px;
-        border: 4px solid #474747;
+        border: 4px solid #ccaa8b;
         border-radius: 21px;
-        background-color: black;
+        background-color: #ccaa8b;
         z-index: 2;
 
         @media screen and (max-width: 796px) {
@@ -97,7 +97,7 @@
       .timeline {
         width: 4px;
         height: 100%;
-        background-color: #474747;
+        background-color: #ccaa8b;
         position: absolute;
         left: calc((100% - 4px) / 2);
 
@@ -109,7 +109,7 @@
       .timeline-2 {
         height: 0px;
         z-index: 2;
-        background-color: #000;
+        background-color: $logo-text-brown;
         transition: height 500ms ease-out 0s;
         transform: translate3d(0px, 0px, 0px);
 
